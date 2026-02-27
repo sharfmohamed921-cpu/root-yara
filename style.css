@@ -1,0 +1,21 @@
+ #topBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 15px;
+            background: #2b6cb0;
+            color: #fff;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 45px;
+            cursor: pointer;
+            display: none;
+            z-index: 99;
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }

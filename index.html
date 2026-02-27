@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amnia Smart City</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-200">
+<nav class="bg-blue-800 text-white p-5">
+    <div class="container mx-auto flex justify-between">
+        <h1 class="text-3xl font-bold">Amnia City</h1>
+        <ul class="flex space-x-5">
+            <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+            <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+            <li><a href="#services" class="hover:text-yellow-300">Services</a></li>
+            <li><a href="#systems" class="hover:text-yellow-300">Systems</a></li>
+            <li><a href="#feedback" class="hover:text-yellow-300">Feedback</a></li>
+            <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="bg-blue-600 text-white py-16 text-center">
+    <div class="container mx-auto">
+        <img src="image/Logo.png" alt="Amnia Logo" class="mx-auto w-24 h-24 mb-5">
+        <h2 class="text-4xl font-bold mb-3">Welcome to Amnia Smart City</h2>
+        <p class="text-xl">A modern city built for the future with tech and sustainability.</p>
+        <a href="#about" class="mt-5 inline-block bg-yellow-400 text-blue-800 px-5 py-2 rounded-lg hover:bg-yellow-500">Discover More</a>
+    </div>
+</section>
+
+<section id="about" class="py-12 bg-white">
+    <div class="container mx-auto px-5">
+        <h2 class="text-2xl font-bold mb-4 text-center">About Amnia City</h2>
+        <p class="text-gray-800">Amnia City, established in 2025 in Egypt, is a smart city with advanced infrastructure, eco-friendly spaces, and tech-driven services to make life easier and safer for residents.</p>
+    </div>
+</section>
+
+<section id="services" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-5">
+        <h2 class="text-2xl font-bold mb-4 text-center">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="bg-white p-5 rounded-lg shadow card">
+                <h3 class="text-lg font-bold">Schools</h3>
+                <p>Modern schools with smart tech for better learning.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow card">
+                <h3 class="text-lg font-bold">Hospitals</h3>
+                <p>Top-notch healthcare with cutting-edge equipment.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow card">
+                <h3 class="text-lg font-bold">Transportation</h3>
+                <p>Smart transport systems with real-time updates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="systems" class="py-12 bg-white">
+    <div class="container mx-auto px-5">
+        <h2 class="text-2xl font-bold mb-4 text-center">Smart Systems</h2>
+        <table class="w-full border">
+            <thead>
+            <tr class="bg-blue-800 text-white">
+                <th class="p-3">System</th>
+                <th class="p-3">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="p-3 border">Booking System</td>
+                <td class="p-3 border">Book services online with ease.</td>
+            </tr>
+            <tr>
+                <td class="p-3 border">Car Counting System</td>
+                <td class="p-3 border">Monitors traffic to keep roads smooth.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="feedback" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-5">
+        <h2 class="text-2xl font-bold mb-4 text-center">Tell Us What You Think</h2>
+        <p class="text-center mb-5">What's your favorite feature?</p>
+        <div class="flex justify-center space-x-3">
+            <button onclick="voteFeature('Booking')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Booking System</button>
+            <button onclick="voteFeature('Traffic')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Traffic System</button>
+            <button onclick="voteFeature('Green')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Green Spaces</button>
+        </div>
+        <p id="voteMsg" class="text-center mt-3 text-gray-800"></p>
+        <div class="mt-5 max-w-lg mx-auto">
+            <h3 class="text-lg font-bold mb-3">Drop a Comment</h3>
+            <textarea id="userComment" class="w-full p-3 border rounded" rows="5" placeholder="Your thoughts here..."></textarea>
+            <button onclick="sendComment()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+            <p id="commentMsg" class="mt-2 text-gray-800"></p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-5 text-center">
+        <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+        <p>Phone: <a href="tel:01012345678" class="text-blue-600">01012345678</a><br>
+            Email: <a href="mailto:smartcity@example.com" class="text-blue-600">smartcity@example.com</a></p>
+        <p class="mt-3"><a href="https://deci.almentor.net/learn/courses/257/project/lessons/3778/project-details" target="_blank" class="text-blue-600">Check out the full project on DECI</a></p>
+    </div>
+</section>
+
+<footer class="bg-blue-800 text-white py-5 text-center">
+    <p>© 2025 Amnia City Project. All Rights Reserved.</p>
+</footer>
+
+<div id="topBtn" onclick="goTop()">↑</div>
+
+<script>
+    let topBtn = document.getElementById("topBtn");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    };
+
+    function goTop() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }
+
+    let voteCounts = { Booking: 0, Traffic: 0, Green: 0 };
+    function voteFeature(feature) {
+        voteCounts[feature]++;
+        document.getElementById("voteMsg").innerText = `Voted for ${feature}! (Booking: ${voteCounts.Booking}, Traffic: ${voteCounts.Traffic}, Green: ${voteCounts.Green})`;
+    }
+
+    function sendComment() {
+        let comment = document.getElementById("userComment").value;
+        if (comment) {
+            document.getElementById("commentMsg").innerText = "Thanks for your feedback!";
+            document.getElementById("userComment").value = "";
+        } else {
+            document.getElementById("commentMsg").innerText = "Please write something first.";
+        }
+    }
+</script>
+</body>
+</html>
